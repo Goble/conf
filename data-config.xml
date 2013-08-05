@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<dataconfig>
+	<!--This is calling on the JDBC drivers -->
+		<dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:8000/prana_server" user="root" password="root"/>
+		  <document>
+    <entity name="outer" 
+            query="select id,name,desc from directory">
+       <field column="objectid" name="id"/>
+       <field column="name" name="name"/>
+       <field column="discrim" name="discrim"/>
+      <!-- <entity name="inner"
+               query="select details from another_table where id ='${outer.id}'">
+              <field column="details" name="solr_details"/> 
+       </entity> -->
+    </entity>
+  </document>
+</dataconfig>
+
