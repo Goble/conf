@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
-
-<dataconfig>
+<dataConfig>
 	<!--This is calling on the JDBC drivers -->
 		<dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:8000/prana_server" user="root" password="root"/>
 		  <document>
@@ -16,5 +14,5 @@
        </entity> -->
     </entity>
   </document>
-</dataconfig>
+</dataConfig>
 
